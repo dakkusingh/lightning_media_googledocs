@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Support for google documents as media entities in Lightning.
+ */
+
+use Drupal\lightning_core\OverrideHelper as Override;
+use Drupal\lightning_media_googledocs\Plugin\MediaEntity\Type\GoogleDocs;
+
+/**
+ * Implements hook_media_entity_type_info_alter().
+ */
+function lightning_media_googledocs_media_entity_type_info_alter(array &$types) {
+  $types['googledocs']['input_match'] = [
+    'constraint' => 'GoogleDocsEmbedCode',
+    'field_types' => [
+      'string',
+      'string_long',
+    ],
+  ];
+  $types['googledocs']['preview'] = TRUE;
+
+  Override::pluginClass($types['googledocs'], GoogleDocs::class);
+}

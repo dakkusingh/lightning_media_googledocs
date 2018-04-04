@@ -6,7 +6,7 @@ dependencies:
 id: googledocs
 label: Google documents
 description: 'Google documents (spreadsheet, presentation, forms and document).'
-type: googledocs
-type_configuration:
+source: googledocs
+source_configuration:
   source_field: embed_code
 field_map: {  }

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.embed_code
-    - media_entity.bundle.googledocs
+    - media.type.googledocs
 id: media.googledocs.embed_code
 field_name: embed_code
 entity_type: media

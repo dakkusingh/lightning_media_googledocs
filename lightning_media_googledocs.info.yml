@@ -5,5 +5,5 @@ description: 'GoogleDocs support for Lightning Media.'
 
 package: Lightning
 dependencies:
-  - lightning_media
-  - media_entity_googledocs
+  - lightning_media:lightning_media
+  - media_entity_googledocs:media_entity_googledocs

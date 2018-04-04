@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.media.googledocs.embed_code
     - field.field.media.googledocs.field_media_in_library
-    - media_entity.bundle.googledocs
+    - media.type.googledocs
   module:
     - media_entity_googledocs
 id: media.googledocs.default
@@ -16,8 +16,8 @@ content:
     weight: 1
     label: hidden
     settings:
-      width: 480
-      height: 299
+      width: 800
+      height: 600
       scrolling: true
       fullscreen: true
     third_party_settings: {  }

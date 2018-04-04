@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.media.googledocs.embed_code
     - field.field.media.googledocs.field_media_in_library
-    - media_entity.bundle.googledocs
+    - media.type.googledocs
 third_party_settings: { }
 id: media.googledocs.default
 targetEntityType: media
